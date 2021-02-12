@@ -18,13 +18,6 @@ function getPhoneNumber(idUser, callback) {
   }, 2000);
 }
 
-// function resolveUser(error, idUser) {
-//   let usuario = idUser;
-//   console.log("Usuário", usuario.id);
-// }
-
-// function getAddress(idUser) {}
-
 getUser(function resolveUser(error, usuario) {
   if (error) {
     console.error("Usuario tá dodoi", error);
@@ -43,7 +36,3 @@ getUser(function resolveUser(error, usuario) {
     );
   });
 });
-
-// const phoneNumber = getPhoneNumber(usuario);
-
-// console.log("Telefone", phoneNumber);

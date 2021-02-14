@@ -7,9 +7,11 @@ async function obterPessoas(nome){
     return response.data
 }
 
-obterPessoas('r2')
+obterPessoas('luke')
 .then((mensagem) =>{
     console.log("Resultado",mensagem)
 }).catch((err)=>{
     console.log(err)
 })
+
+module.exports = {obterPessoas} 
